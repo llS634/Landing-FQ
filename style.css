@@ -1,0 +1,288 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #403F3D;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+    line-height: 150%;
+    font-weight: normal;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    background: #311F1F;
+}
+
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth; 
+}
+
+/* Header ------------------------------------------------------------------------------------*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    z-index: 4;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    margin: 40px 40px 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.big-logo {
+    display: block; 
+}
+
+.mini-logo {
+    display: none;
+    height: 45px;
+}
+
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.get-app-mini {
+    width: 190px;
+    height: 45px;
+    font-size: 24px;
+    background-color: #FDE992; 
+    color: #311F1F;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.theme-switcher {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-left: 26px;
+}
+
+.theme-icon {
+    width: 24px;
+    height: 24px; 
+}
+
+/* Section cover ------------------------------------------------------------------------------------*/
+
+.cover {
+    position: relative;
+    height: 803px;
+    background-size: cover;
+    background-position: center;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.layer1 {
+    background-image: url('assets/img/cover_block/layer-1.png');
+    background-size: cover;
+    z-index: 1;
+    max-width: 100%;
+    background-position: center;
+}
+
+.layer2 {
+    background-image: url('assets/img/cover_block/layer-2.png');
+    background-size: cover;
+    z-index: 2;
+    max-width: 100%;
+    background-position: center;
+}
+
+.layer3 {
+    background-image: url('assets/img/cover_block/layer-3.png');
+    background-size: cover;
+    z-index: 3;
+}
+
+.overlay {
+    position: absolute;
+    top: 300px;
+    right: 15%;
+    z-index: 4;
+    padding-left: 5%;
+}
+
+.overlay img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay-image {
+    width: 100%;
+    height: 100%;
+}
+
+.get-app-button {
+    position: absolute;
+    top: 81%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    width: 334px;
+    height: 88px;
+    font-size: 34px;
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+}
+
+.image-770, .image-1000, .image-1240 {
+    display: none;
+}
+
+/* Media ------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 400px) {
+    .get-app-button {
+        height: 25%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .get-app-mini {
+        width: 110px;
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .theme-switcher {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .get-app-button {
+        left: 53%;
+        width: 80%;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .image-default, .image-1000 {
+        display: none;
+    }
+    .image-770 {
+        display: inline;
+    }
+
+    .get-app-button {
+        left: 54%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .big-logo {
+        display: none;
+    }
+
+    .mini-logo {
+        display: block;
+    }
+
+    .cover {
+        background-size: auto 100%;
+    }
+}
+
+@media screen and (min-width: 771px) and (max-width: 1000px) {
+    .image-default, .image-1240 {
+        display: none;
+    }
+
+    .image-1000 {
+        display: inline;
+    }
+
+    .get-app-button {
+        left: 68%;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1240px) {
+    .image-default, .image-1000 {
+        display: none;
+    }
+
+    .image-1240 {
+        display: inline;
+    }
+
+    .get-app-button {
+        left: 75%;
+    }
+}
+
+
+
+
+
+
+
+
