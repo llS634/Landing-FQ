@@ -1,2 +1,2 @@
-# Landing-FQ
+# Landing-Foodquest
 Landing for app Foodquest
