@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #403F3D;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+    line-height: 150%;
+    letter-spacing: -3%;
+    font-weight: normal;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    color: #311F1F;
+    background: #ffffff;
+}
+
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth; 
+}
