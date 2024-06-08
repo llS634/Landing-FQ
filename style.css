@@ -104,6 +104,10 @@ html {
     text-transform: uppercase;
 }
 
+.get-app-mini:hover {
+    background-color: #C181B0; 
+}
+
 .theme-switcher {
     cursor: pointer;
     background-color: transparent;
@@ -135,7 +139,7 @@ html {
 }
 
 .layer1 {
-    background-image: url('assets/img/cover_block/layer-1.png');
+    background-image: url('assets/img/cover_block/layer-1.svg');
     background-size: cover;
     z-index: 1;
     max-width: 100%;
@@ -143,7 +147,7 @@ html {
 }
 
 .layer2 {
-    background-image: url('assets/img/cover_block/layer-2.png');
+    background-image: url('assets/img/cover_block/layer-2.svg');
     background-size: cover;
     z-index: 2;
     max-width: 100%;
@@ -151,7 +155,7 @@ html {
 }
 
 .layer3 {
-    background-image: url('assets/img/cover_block/layer-3.png');
+    background-image: url('assets/img/cover_block/layer-3.svg');
     background-size: cover;
     z-index: 3;
 }
@@ -191,18 +195,56 @@ html {
     cursor: pointer;
 }
 
+.get-app-button:hover {
+    background-color: #FDE992;
+    animation: 3s;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 190px;
+    background-color: white;
+    color: #000000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.popup p {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+}
+
 .image-770, .image-1000, .image-1240 {
     display: none;
 }
 
 /* Media ------------------------------------------------------------------------------------*/
+@media screen and (max-width: 350px) {
+    .nav {
+        margin: 40px 20px 0;
+    }
+}
 
 @media screen and (max-width: 400px) {
     .get-app-button {
         height: 25%;
     }
 }
-
 
 @media screen and (max-width: 500px) {
     .get-app-mini {
@@ -221,6 +263,12 @@ html {
         left: 53%;
         width: 80%;
         font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .overlay {
+        right: 7%;
     }
 }
 
@@ -278,11 +326,3 @@ html {
         left: 75%;
     }
 }
-
-
-
-
-
-
-
-
